@@ -6,9 +6,6 @@
 set -e
 set -x
 
-readonly abs_dirname=$(cd ${BASH_SOURCE[0]%%*/} && pwd)
-echo abs_dirname:${abs_dirname}
-
 [[ -d tmp ]] || mkdir tmp
 
 for title in vendor/buildbook-rhel6/*; do
