@@ -11,9 +11,12 @@ set -x
 for title in vendor/buildbook-rhel6/*; do
   [[ -d "${title}" ]] || continue
   (
-   echo ${title##*/}
+   echo "===> ${title##*/} started"
    cd ${title}
    pwd; ls
-   ../../vmbuilder/kvm/rhel/6/vmbuilder.sh --config-path ../../../vmbuilder.conf
+   ln -fs ../../../vmbuilder.conf ./.
+   ../../vmbuilder/kvm/rhel/6/vmbuilder.sh --config-path ./vmbuilder.conf
+   rm -f ./vmbuilder.conf
+   echo "===> ${title##*/} finished"
   )
 done
