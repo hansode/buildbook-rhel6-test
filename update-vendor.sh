@@ -6,7 +6,7 @@
 set -e
 
 cd vendor
-for i in *; do
+for i in vmbuilder; do
   echo === $i ===
   (
     cd $i

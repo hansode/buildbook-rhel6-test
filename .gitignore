@@ -1,3 +1,4 @@
 *.raw
 *.pid
 tmp/*
+vendor/buildbook-rhel6/*
