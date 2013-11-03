@@ -6,8 +6,6 @@
 set -e
 set -x
 
-[[ -d tmp ]] || mkdir tmp
-
 readonly vmbuilder_conf_path=./vmbuilder.conf
 
 for title in vendor/buildbook-rhel6/${1:-"*"}; do
