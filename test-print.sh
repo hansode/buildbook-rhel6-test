@@ -10,7 +10,7 @@ set -x
 
 readonly vmbuilder_conf_path=./vmbuilder.conf
 
-for title in vendor/buildbook-rhel6/*; do
+for title in vendor/buildbook-rhel6/${1:-"*"}; do
   [[ -d "${title}" ]] || continue
   (
    echo "===> ${title##*/} started"
