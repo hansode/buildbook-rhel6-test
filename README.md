@@ -1,4 +1,4 @@
-Buildshelf for RHEL6
+buildbook-rhel6-test
 ====================
 
 Test buildbooks printing
