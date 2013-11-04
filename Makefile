@@ -2,11 +2,14 @@ SHELL=/bin/bash
 
 all:
 
-setup:
+setup: vendor/buildbook-rhel6
 	git submodule update --init --recursive
 
 vendor/buildbook-rhel6:
-	(cd vendor && git clone git@github.com:hansode/buildbook-rhel6.git)
+	([[ -d vendor/buildbook-rhel6 ]] || { cd vendor && git clone git@github.com:hansode/buildbook-rhel6.giti; })
+	(cd vendor/buildbook-rhel6 && git pull)
 
 test: setup
 	sudo ./test-print.sh
+
+.PHONY: vendor/buildbook-rhel6
