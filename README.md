@@ -1,7 +1,7 @@
-buildbook-rhel6-test
-====================
+Test Buildbook for RHEL6
+========================
 
-Test buildbooks building
+Test [buidbook-rhel6](https://github.com/hansode/buildbook-rhel6) building
 
 Requirements
 ------------
@@ -19,7 +19,7 @@ $ make setup
 
 Test Build for specific book
 
-```bash
+```
 $ ./test-print.sh <book-name>
 ```
 
