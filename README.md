@@ -1,18 +1,26 @@
 buildbook-rhel6-test
 ====================
 
-Test buildbooks printing
+Test buildbooks building
 
 Requirements
 ------------
 
 + RHEL/CentOS/Scientific
 
-Test printing
--------------
+Getting Started
+---------------
+
+Setup submodules.
+
+```
+$ make setup
+```
+
+Test Build for specific book
 
 ```bash
-$ make test
+$ ./test-print.sh <book-name>
 ```
 
 Links
