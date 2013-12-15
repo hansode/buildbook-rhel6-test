@@ -7,6 +7,8 @@ Requirements
 ------------
 
 + RHEL/CentOS/Scientific
++ [bash](http://www.gnu.org/software/bash/)
++ [make](http://www.gnu.org/software/make/)
 
 Getting Started
 ---------------
@@ -17,7 +19,7 @@ Setup submodules.
 $ make setup
 ```
 
-Test Build for specific book
+Test build for specific book
 
 ```
 $ ./test-print.sh <book-name>
